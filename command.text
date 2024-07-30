@@ -1,0 +1,122 @@
+─[shende@parrot]─[~]
+└──╼ $cd Dekstop
+bash: cd: Dekstop: No such file or directory
+┌─[✗]─[shende@parrot]─[~]
+└──╼ $ls
+brave-browser.desktop                        Music
+Desktop                                      Pictures
+Documents                                    Public
+Downloads                                    skype_skypeforlinux.desktop
+file1.text                                   snap
+google-chrome.desktop                        Templates
+install4j_tmnpg7-BurpSuiteCommunity.desktop  Videos
+┌─[shende@parrot]─[~]
+└──╼ $cd Desktop
+┌─[shende@parrot]─[~/Desktop]
+└──╼ $git clone https://github.com/adityashende-69/demo.git
+Cloning into 'demo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+┌─[shende@parrot]─[~/Desktop]
+└──╼ $cd dem
+bash: cd: dem: No such file or directory
+┌─[✗]─[shende@parrot]─[~/Desktop]
+└──╼ $cd demo
+┌─[shende@parrot]─[~/Desktop/demo]
+└──╼ $ls
+1
+┌─[shende@parrot]─[~/Desktop/demo]
+└──╼ $vim 1
+┌─[shende@parrot]─[~/Desktop/demo]
+└──╼ $vim z.py
+┌─[shende@parrot]─[~/Desktop/demo]
+└──╼ $git add 1 
+┌─[shende@parrot]─[~/Desktop/demo]
+└──╼ $git add z.py
+┌─[shende@parrot]─[~/Desktop/demo]
+└──╼ $
+┌─[shende@parrot]─[~/Desktop/demo]
+└──╼ $git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   1
+	new file:   z.py
+
+┌─[shende@parrot]─[~/Desktop/demo]
+└──╼ $git  commit 1 z.py -m "change"
+[main 741363f] change
+ Committer: Aditya Shende <shende@localhost.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2 insertions(+)
+ create mode 100644 z.py
+┌─[shende@parrot]─[~/Desktop/demo]
+└──╼ $git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+┌─[shende@parrot]─[~/Desktop/demo]
+└──╼ $git push 1 z.py
+error: src refspec z.py does not match any
+error: failed to push some refs to '1'
+┌─[✗]─[shende@parrot]─[~/Desktop/demo]
+└──╼ $git push z.py
+fatal: invalid gitfile format: z.py
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+┌─[✗]─[shende@parrot]─[~/Desktop/demo]
+└──╼ $git remote add origin https://github.com/adityashende-69/demo.git
+error: remote origin already exists.
+┌─[✗]─[shende@parrot]─[~/Desktop/demo]
+└──╼ $git remote add
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+┌─[✗]─[shende@parrot]─[~/Desktop/demo]
+└──╼ $git push
+Username for 'https://github.com': adityashende69
+Password for 'https://adityashende69@github.com': 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 303 bytes | 303.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/adityashende-69/demo.git
+   8c91d4b..741363f  main -> main
+┌─[shende@parrot]─[~/Desktop/demo]
+└──╼ $git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+┌─[shende@parrot]─[~/Desktop/demo]
+└──╼ $
+
